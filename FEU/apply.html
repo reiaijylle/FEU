@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="all.css" rel="stylesheet" type="text/css" />
+    <title>FEU Enrollment Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+          <img src="logo.jpg" alt="FEU Logo" class="logo">
+          <h1>Far Eastern University </h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="profile.html">Developer Profile </a></li>
+            <li><a href="campus life.html">Campus Life</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <div class="container">
+        <h1>Enrollment Application</h1>
+        
+        <form action="submit_form.php" method="POST">
+            <!-- Personal Information -->
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="birthdate">Date of Birth:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Contact Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <!-- Academic Information -->
+            <label for="lastschool">Last School Attended:</label>
+            <input type="text" id="lastschool" name="lastschool" required>
+
+            <label for="education">Highest Education Level:</label>
+            <select id="education" name="education">
+                <option value="highschool">High School Graduate</option>
+                <option value="college">Some College</option>
+                <option value="graduate">College Graduate</option>
+            </select>
+
+            <!-- Program Selection -->
+            <label for="program">Select Program:</label>
+            <select id="program" name="program">
+                <option value="bsit">Bachelor of Science in Information Technology</option>
+                <option value="bscs">Bachelor of Science in Computer Science</option>
+                <option value="bsa">Bachelor of Science in Accountancy</option>
+                <option value="bse">Bachelor of Science in Engineering</option>
+                <option value="bsn">Bachelor of Science in Nursing</option>
+            </select>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 Far Eastern University. All Rights Reserved.
+    </div>
+
+</body>
+</html>
